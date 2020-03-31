@@ -44,3 +44,9 @@ I use notebooks for data analysis because of convenience for visualization. Thes
 * gaussian_fit.ipynb
 
   Fits the halo data to a multivariate Gaussian profile then determines the Mahalanobis distances for each halo. This is a generalization of the standard deviation that quantifies how much of an outlier a halo is from the mean.
+
+* svm.ipynb
+
+  Performs support-vector classification (SVC) on the halo data utilizing sklearn modules. Classifies Pop III progenitor halos against no-star halos. Verifies the classification with a test-train split: the SVC model is trained on a subset of the data then makes predictions on the rest of the data where its predictions can be compared to the known classification labels.
+  I test several different SVC kernels, test sizes, and various hyperparameters to find the best model. I also do a simple feature-selection test by removing features (or halo properties) from the analysis one-by-one and determining how much the effectiveness of the model decreases.
+  
